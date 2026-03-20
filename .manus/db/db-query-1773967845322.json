@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `messages` (`id` int AUTO_INCREMENT NOT NULL, `conversationId` int NOT NULL, `senderId` int NOT NULL, `content` text NOT NULL, `moderated` boolean NOT NULL DEFAULT false, `moderationFlag` boolean NOT NULL DEFAULT false, `moderationReason` text, `llmSuggestion` text, `readAt` timestamp, `createdAt` timestamp NOT NULL DEFAULT (now()), CONSTRAINT `messages_id` PRIMARY KEY(`id`))",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4DLDFLD8i65hfXi.root --database k4AiXEKdrEqKnyejMXsGQs --execute CREATE TABLE IF NOT EXISTS `messages` (`id` int AUTO_INCREMENT NOT NULL, `conversationId` int NOT NULL, `senderId` int NOT NULL, `content` text NOT NULL, `moderated` boolean NOT NULL DEFAULT false, `moderationFlag` boolean NOT NULL DEFAULT false, `moderationReason` text, `llmSuggestion` text, `readAt` timestamp, `createdAt` timestamp NOT NULL DEFAULT (now()), CONSTRAINT `messages_id` PRIMARY KEY(`id`))",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 455
+}

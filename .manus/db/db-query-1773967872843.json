@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `users` ADD COLUMN IF NOT EXISTS `emailVerified` boolean DEFAULT false NOT NULL;\nALTER TABLE `users` ADD COLUMN IF NOT EXISTS `avatarUrl` text;\nALTER TABLE `users` ADD COLUMN IF NOT EXISTS `bio` text;\nINSERT IGNORE INTO `categories` (`name`, `slug`, `icon`) VALUES\n('Electronics', 'electronics', 'Cpu'),\n('Fashion', 'fashion', 'Shirt'),\n('Home & Garden', 'home-garden', 'Home'),\n('Sports', 'sports', 'Dumbbell'),\n('Books', 'books', 'BookOpen'),\n('Beauty', 'beauty', 'Sparkles'),\n('Toys', 'toys', 'Gamepad2'),\n('Automotive', 'automotive', 'Car'),\n('Food & Drinks', 'food-drinks', 'UtensilsCrossed'),\n('Art & Crafts', 'art-crafts', 'Palette')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4DLDFLD8i65hfXi.root --database k4AiXEKdrEqKnyejMXsGQs --execute ALTER TABLE `users` ADD COLUMN IF NOT EXISTS `emailVerified` boolean DEFAULT false NOT NULL;\nALTER TABLE `users` ADD COLUMN IF NOT EXISTS `avatarUrl` text;\nALTER TABLE `users` ADD COLUMN IF NOT EXISTS `bio` text;\nINSERT IGNORE INTO `categories` (`name`, `slug`, `icon`) VALUES\n('Electronics', 'electronics', 'Cpu'),\n('Fashion', 'fashion', 'Shirt'),\n('Home & Garden', 'home-garden', 'Home'),\n('Sports', 'sports', 'Dumbbell'),\n('Books', 'books', 'BookOpen'),\n('Beauty', 'beauty', 'Sparkles'),\n('Toys', 'toys', 'Gamepad2'),\n('Automotive', 'automotive', 'Car'),\n('Food & Drinks', 'food-drinks', 'UtensilsCrossed'),\n('Art & Crafts', 'art-crafts', 'Palette')",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1572
+}

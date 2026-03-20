@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `conversations` (`id` int AUTO_INCREMENT NOT NULL, `buyerId` int NOT NULL, `sellerId` int NOT NULL, `productId` int, `lastMessageAt` timestamp NOT NULL DEFAULT (now()), `createdAt` timestamp NOT NULL DEFAULT (now()), CONSTRAINT `conversations_id` PRIMARY KEY(`id`))",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4DLDFLD8i65hfXi.root --database k4AiXEKdrEqKnyejMXsGQs --execute CREATE TABLE IF NOT EXISTS `conversations` (`id` int AUTO_INCREMENT NOT NULL, `buyerId` int NOT NULL, `sellerId` int NOT NULL, `productId` int, `lastMessageAt` timestamp NOT NULL DEFAULT (now()), `createdAt` timestamp NOT NULL DEFAULT (now()), CONSTRAINT `conversations_id` PRIMARY KEY(`id`))",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 469
+}

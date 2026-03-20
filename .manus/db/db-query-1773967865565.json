@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `products` (`id` int AUTO_INCREMENT NOT NULL, `sellerId` int NOT NULL, `categoryId` int, `name` varchar(255) NOT NULL, `description` text, `price` decimal(10,2) NOT NULL, `stock` int NOT NULL DEFAULT 0, `images` json, `status` enum('active','inactive') NOT NULL DEFAULT 'active', `featured` boolean NOT NULL DEFAULT false, `salesCount` int NOT NULL DEFAULT 0, `viewCount` int NOT NULL DEFAULT 0, `createdAt` timestamp NOT NULL DEFAULT (now()), `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP, CONSTRAINT `products_id` PRIMARY KEY(`id`))",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 4DLDFLD8i65hfXi.root --database k4AiXEKdrEqKnyejMXsGQs --execute CREATE TABLE IF NOT EXISTS `products` (`id` int AUTO_INCREMENT NOT NULL, `sellerId` int NOT NULL, `categoryId` int, `name` varchar(255) NOT NULL, `description` text, `price` decimal(10,2) NOT NULL, `stock` int NOT NULL DEFAULT 0, `images` json, `status` enum('active','inactive') NOT NULL DEFAULT 'active', `featured` boolean NOT NULL DEFAULT false, `salesCount` int NOT NULL DEFAULT 0, `viewCount` int NOT NULL DEFAULT 0, `createdAt` timestamp NOT NULL DEFAULT (now()), `updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP, CONSTRAINT `products_id` PRIMARY KEY(`id`))",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 514
+}
