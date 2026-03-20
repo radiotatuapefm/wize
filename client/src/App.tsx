@@ -12,6 +12,7 @@ import CreateProductPage from "./pages/CreateProductPage";
 import EditProductPage from "./pages/EditProductPage";
 import OrdersPage from "./pages/OrdersPage";
 import ChatPage from "./pages/ChatPage";
+import AboutPage from "./pages/AboutPage";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/orders" component={OrdersPage} />
       <Route path="/chat" component={ChatPage} />
       <Route path="/chat/:conversationId" component={ChatPage} />
+      <Route path="/about" component={AboutPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

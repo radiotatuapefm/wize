@@ -1,6 +1,7 @@
 {
-  "name": "wize",
-  "version": "1.0.0",
+  "name": "mix-jaraguá-do-sul",
+  "version": "2.0.0",
+  "description": "MIX Jaraguá do Sul - Marketplace regional que conecta vendedores locais a compradores com experiência moderna, segura e eficiente.",
   "type": "module",
   "license": "MIT",
   "scripts": {

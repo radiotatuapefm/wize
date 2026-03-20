@@ -64,7 +64,7 @@ export default function Navbar() {
               className="text-xl font-black tracking-tight gradient-text-purple"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              WIZE
+              MIX
             </span>
           </Link>
 

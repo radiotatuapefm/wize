@@ -44,7 +44,7 @@ export default function Home() {
                 Buy &amp; Sell <span className="gradient-text-purple">Anything</span><br />with Confidence
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-                WIZE connects buyers and sellers in a premium marketplace. Discover unique products, sell with ease, and transact securely.
+                MIX Jaraguá do Sul conecta vendedores locais a compradores em um marketplace regional premium. Descubra produtos únicos, venda com facilidade e transacione com segurança.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/marketplace">
@@ -160,7 +160,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl opacity-20" style={{ background: "var(--wize-purple)" }} />
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-black mb-4">Ready to start selling?</h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">Join thousands of sellers on WIZE. List your products in minutes and reach buyers worldwide.</p>
+              <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">Junte-se a milhares de vendedores no MIX Jaraguá do Sul. Liste seus produtos em minutos e alcance compradores da região.</p>
               {isAuthenticated ? (
                 <Link href="/dashboard/products/new"><Button size="lg" className="gradient-purple text-white font-bold px-10 glow-purple hover:opacity-90">List a Product Now</Button></Link>
               ) : (
@@ -177,9 +177,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-7 h-7 rounded-lg gradient-purple flex items-center justify-center"><Zap className="w-3.5 h-3.5 text-white" /></div>
-              <span className="font-black text-lg gradient-text-purple">WIZE</span>
+              <span className="font-black text-lg gradient-text-purple">MIX Jaraguá do Sul</span>
             </div>
-            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} WIZE Marketplace. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} MIX Jaraguá do Sul. Todos os direitos reservados.</p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
               <Link href="/marketplace" className="hover:text-foreground transition-colors">Marketplace</Link>
               <Link href="/dashboard" className="hover:text-foreground transition-colors">Sell</Link>

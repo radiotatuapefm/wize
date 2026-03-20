@@ -1,57 +1,40 @@
-# WIZE Marketplace - TODO
+# MIX Jaraguá do Sul - Rebranding TODO
 
-## Phase 1: Database Schema
-- [x] Users table with OTP fields and email verification
-- [x] Products table with all fields (name, desc, price, category, images, stock, status)
-- [x] Categories table
-- [x] Orders table for Stripe payments
-- [x] Chat conversations and messages tables
-- [x] OTP tokens table
+## Rebranding: WIZE → MIX Jaraguá do Sul
 
-## Phase 2: Backend (tRPC Routers)
-- [x] Auth router: me, logout (Manus OAuth-based authentication)
-- [x] Products router: create, update, delete, list, getById, toggleStatus
-- [x] Marketplace router: featured, search, filter by category/price/popularity
-- [x] Upload router: S3 image upload for products (getUploadUrl + uploadImage)
-- [x] Orders router: create checkout session, webhook handler
-- [x] Chat router: createConversation, sendMessage, listMessages, LLM moderation
+### Phase 1: Rebranding - Substituição de Nomes
+- [x] Substituir "WIZE" por "MIX Jaraguá do Sul" em Navbar.tsx
+- [x] Substituir "WIZE" por "MIX Jaraguá do Sul" em Home.tsx
+- [x] Substituir "WIZE" por "MIX Jaraguá do Sul" em index.css (comentários)
+- [x] Substituir "WIZE" por "MIX Jaraguá do Sul" em App.tsx (comentários)
+- [x] Atualizar título da aba do navegador em client/index.html
+- [x] Atualizar meta tags SEO em client/index.html
+- [x] Atualizar nome da aplicação em package.json (description)
 
-## Phase 3: Stripe Integration
-- [x] Add Stripe feature via webdev_add_feature
-- [x] Create checkout session procedure
-- [x] Stripe webhook for order confirmation
-- [x] Order status updates
+### Phase 2: Componentes de Interface
+- [x] Criar componente Footer.tsx com créditos profissionais
+- [x] Integrar Footer em App.tsx
+- [x] Criar página About.tsx com informações do desenvolvedor
+- [x] Adicionar rota /about em App.tsx
+- [x] Adicionar link para About no Footer
 
-## Phase 4: Frontend - Design System & Marketplace
-- [x] Dark mode CSS variables (black, dark gray, neon purple, electric blue, neon green)
-- [x] Google Fonts (Inter + Poppins)
-- [x] Global layout with top navigation bar (Navbar.tsx)
-- [x] Home page with hero section and featured products
-- [x] Search bar with live results
-- [x] Category/price/popularity filters (MarketplacePage)
-- [x] Product card component with hover animations (ProductCard.tsx)
-- [x] Individual product page with image gallery and purchase button (ProductPage.tsx)
-- [x] Smooth animations (fade, slide) with framer-motion
+### Phase 3: Backend e Variáveis
+- [x] Atualizar VITE_APP_TITLE para "MIX Jaraguá do Sul"
+- [x] Atualizar comentários em server/routers.ts
+- [x] Atualizar comentários em server/db.ts
+- [x] Atualizar nome em notificações ao owner
 
-## Phase 5: Seller Dashboard
-- [x] Seller dashboard layout (DashboardPage.tsx)
-- [x] Product list with status indicators
-- [x] Create product form with S3 image upload (CreateProductPage.tsx)
-- [x] Edit product form (EditProductPage.tsx)
-- [x] Delete product with confirmation dialog
-- [x] Toggle active/inactive status
-- [x] Dashboard stats (total products, active, sales, views)
+### Phase 4: Testes e Finalizações
+- [x] Verificar responsividade em mobile
+- [x] Verificar links de contato do desenvolvedor
+- [x] Executar testes Vitest
+- [x] Checkpoint final e entrega
 
-## Phase 6: Chat System
-- [x] Real-time chat UI between buyer and seller (ChatPage.tsx)
-- [x] LLM-powered message moderation
-- [x] LLM response suggestions for sellers
-- [x] Conversation list sidebar
-- [x] Message bubbles with timestamps
-
-## Phase 7: Final Polish
-- [x] Owner email notifications for new products and key events
-- [x] Role-based access control (admin vs user via schema)
-- [x] Mobile responsiveness (mobile-first design throughout)
-- [x] Vitest unit tests (23 tests passing)
-- [x] Final checkpoint and delivery
+## Informações do Desenvolvedor
+- Nome: Julio Cesar Campos Machado
+- Especialidade: Full Stack Developer
+- Empresa: Like Look Solutions
+- Telefone: +55 11 99294-6628 / (11) 97060-3441
+- Email: juliocamposmachado@gmail.com
+- LinkedIn: https://www.linkedin.com/in/juliocamposmachado/
+- Website: https://likelook.wixsite.com/solutions
